@@ -71,6 +71,90 @@
         hideDecimalForWholeNumbers: false,
       };
     </script>
+<style>
+.partner-row-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 80px 0; 
+  position: relative;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.partner-track {
+  display: flex;
+  width: max-content;
+  animation: infinite-scroll 10s linear infinite; 
+}
+
+.partner-group {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  padding-right: 20px; 
+}
+
+.partner-logo {
+  height: 180px; 
+  width: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}
+
+.partner-track:hover {
+  animation-play-state: running;
+}
+.partner-row-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 0; 
+  position: relative;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.partner-track-v2 {
+  display: flex;
+  width: max-content;
+  animation: scroll-clients 8s linear infinite; 
+}
+
+.partner-group {
+  display: flex;
+  align-items: center;
+  gap: 100px; 
+  padding-right: 100px; 
+}
+
+.partner-logo {
+  height: 140px; 
+  width: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+@keyframes scroll-clients {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.partner-track-v2:hover {
+  animation-play-state: running;
+}
+</style>
   </head>
   <body>
     <div class="page-wrapper">
@@ -1162,287 +1246,42 @@
           </div>
           <div class="header-opacity"></div>
         </header>
-        <section class="section-about-partners">
-          <div class="padding-global">
-            <div class="container-large">
-              <div class="spacer-huge"></div>
-              <div class="text-size-regular text-align-center">
-                Private Label Clients
-              </div>
-              <div class="spacer-large"></div>
-              <div
-                data-w-id="61b768d7-9945-e866-e657-60a03f238781"
-                class="partner-row-wrapper"
-              >
-                <div
-                  style="
-                    -webkit-transform: translate3d(-100%, 0, 0) scale3d(1, 1, 1)
-                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    -moz-transform: translate3d(-100%, 0, 0) scale3d(1, 1, 1)
-                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    -ms-transform: translate3d(-100%, 0, 0) scale3d(1, 1, 1)
-                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    transform: translate3d(-100%, 0, 0) scale3d(1, 1, 1)
-                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  "
-                  class="w-layout-grid partner-component-grid"
-                >
-                  <div
-                    id="w-node-_61b768d7-9945-e866-e657-60a03f238790-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/fogg-logo.jpg"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                  <div
-                    id="w-node-_61b768d7-9945-e866-e657-60a03f238792-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/Dabur_Logo.svg.png"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                  <div
-                    id="w-node-_61b768d7-9945-e866-e657-60a03f238794-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/FRIDAL-logo.webp"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                  <div
-                    id="w-node-_61b768d7-9945-e866-e657-60a03f238796-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/myway-logo.png"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                  <div
-                    id="w-node-_61b768d7-9945-e866-e657-60a03f238798-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/class-perfumes-logo.png"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                  <div
-                    id="w-node-_61b768d7-9945-e866-e657-60a03f23879a-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/beesline-logo.webp"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                </div>
-                <div
-                  style="
-                    -webkit-transform: translate3d(-100%, 0, 0) scale3d(1, 1, 1)
-                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    -moz-transform: translate3d(-100%, 0, 0) scale3d(1, 1, 1)
-                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    -ms-transform: translate3d(-100%, 0, 0) scale3d(1, 1, 1)
-                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    transform: translate3d(-100%, 0, 0) scale3d(1, 1, 1)
-                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  "
-                  class="w-layout-grid partner-component-grid"
-                >
-                  <div
-                    id="w-node-_781891e7-efdb-7f43-b550-f82d06d1ccc7-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/fogg-logo.jpg"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                  <div
-                    id="w-node-_781891e7-efdb-7f43-b550-f82d06d1ccc9-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/Dabur_Logo.svg.png"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                  <div
-                    id="w-node-_781891e7-efdb-7f43-b550-f82d06d1cccb-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/FRIDAL-logo.webp"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                  <div
-                    id="w-node-_781891e7-efdb-7f43-b550-f82d06d1cccd-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/class-perfumes-logo.png"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                  <div
-                    id="w-node-_781891e7-efdb-7f43-b550-f82d06d1cccf-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/myway-logo.png"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                  <div
-                    id="w-node-_781891e7-efdb-7f43-b550-f82d06d1ccd1-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/beesline-logo.webp"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                  <div
-                    id="w-node-_61b768d7-9945-e866-e657-60a03f23879a-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/msa-perfumes-logo.png"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                </div>
-                <div
-                  style="
-                    -webkit-transform: translate3d(-100%, 0, 0) scale3d(1, 1, 1)
-                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    -moz-transform: translate3d(-100%, 0, 0) scale3d(1, 1, 1)
-                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    -ms-transform: translate3d(-100%, 0, 0) scale3d(1, 1, 1)
-                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    transform: translate3d(-100%, 0, 0) scale3d(1, 1, 1)
-                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  "
-                  class="w-layout-grid partner-component-grid"
-                >
-                  <div
-                    id="w-node-_781891e7-efdb-7f43-b550-f82d06d1ccc7-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/fogg-logo.jpg"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                  <div
-                    id="w-node-_781891e7-efdb-7f43-b550-f82d06d1ccc9-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/Dabur_Logo.svg.png"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                  <div
-                    id="w-node-_781891e7-efdb-7f43-b550-f82d06d1cccb-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/FRIDAL-logo.webp"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                  <div
-                    id="w-node-_781891e7-efdb-7f43-b550-f82d06d1cccd-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/class-perfumes-logo.png"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                  <div
-                    id="w-node-_781891e7-efdb-7f43-b550-f82d06d1cccf-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/myway-logo.png"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                  <div
-                    id="w-node-_781891e7-efdb-7f43-b550-f82d06d1ccd1-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/beesline-logo.webp"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                  <div
-                    id="w-node-_61b768d7-9945-e866-e657-60a03f23879a-324f1315"
-                    class="partner-item"
-                  >
-                    <img
-                      loading="lazy"
-                      src="./assets/msa-perfumes-logo.png"
-                      alt=""
-                      class="partner-logo"
-                    />
-                  </div>
-                </div>
-                <div class="partner-opacity left"></div>
-                <div class="partner-opacity right"></div>
-              </div>
-              <div class="spacer-large"></div>
-            </div>
+       <section class="section-about-partners">
+  <div class="line" style="margin-bottom: 30px;"></div> <div class="padding-global">
+    <div class="container-large">
+      <div class="text-size-regular text-align-center">
+        Private Label Clients
+      </div>
+      
+      <div style="margin-bottom: 20px;"></div>
+
+      <div class="partner-row-wrapper">
+        <div class="partner-track-v2">
+          <div class="partner-group">
+            <img src="./assets/fogg-logo.jpg" class="partner-logo" />
+            <img src="./assets/Dabur_Logo.svg.png" class="partner-logo" />
+            <img src="./assets/FRIDAL-logo.webp" class="partner-logo" />
+            <img src="./assets/myway-logo.png" class="partner-logo" />
+            <img src="./assets/class-perfumes-logo.png" class="partner-logo" />
+            <img src="./assets/beesline-logo.webp" class="partner-logo" />
+            <img src="./assets/msa-perfumes-logo.png" class="partner-logo" />
           </div>
-        </section>
+          <div class="partner-group">
+            <img src="./assets/fogg-logo.jpg" class="partner-logo" />
+            <img src="./assets/Dabur_Logo.svg.png" class="partner-logo" />
+            <img src="./assets/FRIDAL-logo.webp" class="partner-logo" />
+            <img src="./assets/myway-logo.png" class="partner-logo" />
+            <img src="./assets/class-perfumes-logo.png" class="partner-logo" />
+            <img src="./assets/beesline-logo.webp" class="partner-logo" />
+            <img src="./assets/msa-perfumes-logo.png" class="partner-logo" />
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 30px;"></div>
+    </div>
+  </div>
+</section>
         <section class="section-about-content">
           <div class="padding-global">
             <div class="container-large">
@@ -1845,7 +1684,59 @@ brands.
             </div>
           </div>
         </section>
-        <section class="section-about-values">
+
+ <section class="section-about-partners">
+  <div class="padding-global">
+    <div class="container-large">
+      <div class="spacer-huge"></div>
+      <div class="text-size-regular text-align-center">Our Brands</div>
+      <!-- <div class="spacer-large"></div> -->
+
+     <div class="partner-row-wrapper">
+  <div class="partner-track">
+    <div class="partner-group">
+      <img src="./assets/diva.png" class="partner-logo" />
+      <img src="./assets/lomani-paris.png" class="partner-logo" />
+      <img src="./assets/franck-oliver.png" class="partner-logo" />
+      <img src="./assets/cigar.png" class="partner-logo" />
+      <img src="./assets/class-perfume-brand.png" class="partner-logo" />
+      <img src="./assets/manly-man.png" class="partner-logo" />
+      <img src="./assets/xl.png" class="partner-logo" />
+    </div>
+    <div class="partner-group">
+      <img src="./assets/diva.png" class="partner-logo" />
+      <img src="./assets/lomani-paris.png" class="partner-logo" />
+      <img src="./assets/franck-oliver.png" class="partner-logo" />
+      <img src="./assets/cigar.png" class="partner-logo" />
+      <img src="./assets/class-perfume-brand.png" class="partner-logo" />
+      <img src="./assets/manly-man.png" class="partner-logo" />
+      <img src="./assets/xl.png" class="partner-logo" />
+    </div>
+    <div class="partner-group">
+      <img src="./assets/diva.png" class="partner-logo" />
+      <img src="./assets/lomani-paris.png" class="partner-logo" />
+      <img src="./assets/franck-oliver.png" class="partner-logo" />
+      <img src="./assets/cigar.png" class="partner-logo" />
+      <img src="./assets/class-perfume-brand.png" class="partner-logo" />
+      <img src="./assets/manly-man.png" class="partner-logo" />
+      <img src="./assets/xl.png" class="partner-logo" />
+    </div>
+    <div class="partner-group">
+      <img src="./assets/diva.png" class="partner-logo" />
+      <img src="./assets/lomani-paris.png" class="partner-logo" />
+      <img src="./assets/franck-oliver.png" class="partner-logo" />
+      <img src="./assets/cigar.png" class="partner-logo" />
+      <img src="./assets/class-perfume-brand.png" class="partner-logo" />
+      <img src="./assets/manly-man.png" class="partner-logo" />
+      <img src="./assets/xl.png" class="partner-logo" />
+    </div>
+  </div>
+</div>
+      <!-- <div class="spacer-large"></div> -->
+    </div>
+  </div>
+</section>      
+          <section class="section-about-values">
           <div class="padding-global">
             <div class="container-large">
               <div class="padding-section-large">
