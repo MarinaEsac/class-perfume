@@ -8666,3 +8666,62 @@ footer {
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+
+  .section-about-numbers {
+    padding-top: 24px !important;
+  }
+
+  .numbers-component-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px;
+  }
+
+  .max-width-medium {
+    max-width: 100% !important;
+    text-align: center;
+  }
+
+  .heading-style-h3 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .text-size-regular {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .numbers-grid {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+
+  .metric-number {
+    font-size: 24px;
+  }
+
+  .button-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .inner-image-frame {
+    aspect-ratio: 3 / 4;
+    border-radius: 16px;
+    transform: none !important;
+  }
+
+  .inner-image-frame img {
+    transform: none !important;
+    object-fit: cover;
+  }
+}
+

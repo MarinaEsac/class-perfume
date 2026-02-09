@@ -4938,7 +4938,7 @@ blockquote {
 }
 
 .nav-text {
-  color: var(--black);
+  color: #737373;
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1;
@@ -4946,7 +4946,7 @@ blockquote {
 
 .nav-text.is-hover {
   opacity: 0.65;
-  color: var(--black);
+  color: white;
 }
 
 .brand-link {
@@ -6743,7 +6743,7 @@ blockquote {
   }
 
   .menu-button {
-    border: 1px solid #292e322b;
+    border: 1px solid #777777;
     border-radius: 100%;
     width: 3.5rem;
     height: 3.5rem;
@@ -6761,7 +6761,7 @@ blockquote {
   }
 
   .menu-line {
-    background-color: #000;
+    background-color: #8d8b8a;
     height: 1.5px;
   }
 
@@ -9072,4 +9072,159 @@ footer {
   .link-text.is-footer-hover {
     display: none;
   }
+}
+
+.hero-slider {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1.1);
+  transition: opacity 1s ease, transform 1.5s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.2)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.feature-component-grid {
+  direction: ltr;
+}
+
+.feature-component-grid.is-reversed {
+  direction: rtl;
+}
+
+.feature-component-grid.is-reversed .feature-content-block,
+.feature-component-grid.is-reversed .feature-container {
+  direction: ltr;
+}
+.about-editorial {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 80px;
+    padding: 0 8%;
+    align-items: center;
+    background: #feefe7;
+}
+
+/* Image side */
+.visual {
+    position: relative;
+}
+
+.visual img {
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+    border-radius: 0 80px 0 80px;
+}
+
+/* Text side */
+.story {
+    position: relative;
+}
+
+.story h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 40px;
+}
+
+.story span {
+    display: block;
+    font-size: 18px;
+    color: #777;
+    margin-top: 12px;
+}
+
+.story p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 25px;
+    max-width: 420px;
+}
+
+/* Link instead of button */
+.link-btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+.link-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: 0.3s ease;
+}
+
+.link-btn:hover::after {
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .about-editorial {
+        grid-template-columns: 1fr;
+        padding: 80px 6%;
+    }
+
+    .visual img {
+        height: 60vh;
+        border-radius: 40px;
+    }
+
+    .story h1 {
+        font-size: 40px;
+    }
 }
