@@ -79,6 +79,12 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
+<link
+  rel="preload"
+  as="image"
+  href="./assets/aerasol.webp"
+  fetchpriority="high"
+/>
 
   </head>
   <body>
@@ -103,7 +109,6 @@
                 class="brand-link w-inline-block w--current"
                 ><img
                   src="./assets/Cpc Lorigine.png"
-                  loading="lazy"
                   alt="Logo - Glamory Webflow Template"
                   class="logo"
               /></a>
@@ -945,28 +950,28 @@ PERFUMES <br /> COSMETIC
         </header> -->
         <header class="hero-slider">
   <div class="slides">
-     <div class="slide active" style="background-image:url('./assets/aerasol.jpeg')">
+     <div class="slide active" data-bg="./assets/aerasol.webp">
       <div class="overlay">
         <h1>Aerosols</h1>
         <p>The Only Factory Specialized in Complete Aerosol Production</p>
       </div>
     </div>
 
-    <div class="slide" style="background-image:url('./assets/Detergents.webp')">
+    <div class="slide" data-bg="./assets/Detergents.webp">
       <div class="overlay">
         <h1>DETERGENTS</h1>
         <p>Manufacturer of all household products.</p>
       </div>
     </div>
 
-    <div class="slide" style="background-image:url('./assets/perfumes.jpg')">
+    <div class="slide" data-bg="./assets/perfumes.webp">
       <div class="overlay">
         <h1>PERFUMES</h1>
         <p>Luxury Scents Since 2000</p>
       </div>
     </div>
 
-    <div class="slide" style="background-image:url('./assets/factory-image(8).jpg')">
+    <div class="slide" data-bg="./assets/factory-image(8).webp">
       <div class="overlay">
         <h1>OUR FACTORY</h1>
         <p>Certified Production Lines</p>
@@ -975,13 +980,32 @@ PERFUMES <br /> COSMETIC
 
   </div>
 </header>
-<script>
+<!-- <script>
   const slides = document.querySelectorAll('.slide');
   let current = 0;
 
   setInterval(() => {
     slides[current].classList.remove('active');
     current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }, 4000);
+</script> -->
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+
+  function loadBg(slide) {
+    if (!slide.style.backgroundImage) {
+      slide.style.backgroundImage = `url('${slide.dataset.bg}')`;
+    }
+  }
+
+  loadBg(slides[0]); 
+
+  setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    loadBg(slides[current]); 
     slides[current].classList.add('active');
   }, 4000);
 </script>
@@ -1131,7 +1155,7 @@ to packaging design and full-scale production.
                       </div>
                       <div class="feature-image-wrapper _03">
                   <img
-                    src="./assets/home.jpg"
+                    src="./assets/Export-logistics.jpeg"
                     loading="lazy"
                     alt="Homecare Sparkling Surfaces"
                     class="feature-image"
@@ -2189,13 +2213,12 @@ Keep your home healthy and sparkling clean with our essential care range.</p>
                         <div class="product-content-block">
                          <div class="product-image-wrapper">
                               <img
-                                loading="lazy"
-                                data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
                                 src="./assets/first-certificate.png"
                                 alt="GlowBlush Palette"
-                                sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 45vw, (max-width: 1919px) 30vw, 442.6640625px"
-                               
                                 class="product-image"
+                                loading="lazy"
+                                width="400"
+                                height="400"
                               />
                             </div>
                         
@@ -2205,13 +2228,13 @@ Keep your home healthy and sparkling clean with our essential care range.</p>
                         <div class="product-content-block">
                          <div class="product-image-wrapper">
                               <img
-                                loading="lazy"
-                                data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
+                               
                                 src="./assets/sec-certificate.png"
                                 alt="Volume Dry Shampoo"
-                                sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 45vw, (max-width: 1919px) 30vw, 442.6640625px"
-                               
+                                loading="lazy"
                                 class="product-image"
+                                width="400"
+                                height="400"
                               />
                             </div>
                         
@@ -2221,13 +2244,13 @@ Keep your home healthy and sparkling clean with our essential care range.</p>
                         <div class="product-content-block">
                         <div class="product-image-wrapper">
                               <img
-                                loading="lazy"
-                                data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
+                               
                                 src="./assets/third-certificate.png"
                                 alt="PureDew Moisturizer"
-                                sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 45vw, (max-width: 1919px) 30vw, 442.6640625px"
-                            
+                                loading="lazy"
                                 class="product-image"
+                                width="400"
+                                height="400"
                               />
                             </div>
                          
