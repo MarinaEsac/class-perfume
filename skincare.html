@@ -67,6 +67,8 @@
         hideDecimalForWholeNumbers: false,
       };
     </script>
+    <link rel="preload" as="image" href="./assets/skincare.webp" fetchpriority="high" />
+
   </head>
   <body>
     <div class="page-wrapper">
@@ -670,9 +672,10 @@
 
           <div class="banner-container">
             <img
-              src="./assets/skincare.png"
+              src="./assets/skincare.webp"
               alt="Hair Care Model"
               class="hero-image"
+              loading="lazy"
             />
           </div>
           <div class="line"></div>

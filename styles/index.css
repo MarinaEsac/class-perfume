@@ -4938,7 +4938,7 @@ blockquote {
 }
 
 .nav-text {
-  color: #737373;
+  color: rgba(255, 255, 255, 0.85);
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1;
@@ -9227,4 +9227,20 @@ footer {
     .story h1 {
         font-size: 40px;
     }
+}
+
+@media (max-width: 768px) {
+  .nav-text {
+    color: #111;
+  }
+   .menu-line {
+    background-color: #fff;
+  }
+   .menu-button {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 50%;
+  }
+    .w-nav-button.w--open .menu-line {
+    background-color: #fff;
+  }
 }
