@@ -664,6 +664,15 @@
         </div>
         <section class="events-section">
           <div class="events-grid">
+             <div class="event-card" data-year="2026" data-title="Private Label">
+              <img src="./assets/private-label26(3).jpeg" alt="" loading="lazy"/>
+              <div class="event-content">
+                <p class="event-date">2026</p>
+                <h3>Private Label</h3>
+                <button class="event-btn">View Details</button>
+              </div>
+            </div>
+
             <div class="event-card" data-year="2025" data-title="Egy Beauty">
               <img src="./assets/e-b25.webp" alt="" loading="lazy"/>
               <div class="event-content">
@@ -709,6 +718,15 @@
             </div>
           </div>
         </section>
+        <script>
+document.querySelectorAll(".event-card").forEach(card => {
+  const year = card.dataset.year;
+  const title = card.dataset.title;
+  const btn = card.querySelector(".event-btn");
+
+  btn.href = `event.html?year=${year}&title=${encodeURIComponent(title)}`;
+});
+</script>
       </main>
       <script>
         document.querySelectorAll(".event-card").forEach((card) => {
@@ -727,7 +745,18 @@
                 "./assets/e-b25(5).webp",
                 "./assets/e-b25(6).webp",
               ];
-            } else if (year === "2018") {
+            } else if (year === "2026") {
+              images = [
+                "./assets/private-label26.jpeg",
+                "./assets/private-label26(2).jpeg",
+                "./assets/private-label26(3).jpeg",
+                "./assets/private-label26(4).jpeg",
+                "./assets/private-label26(5).jpeg",
+                "./assets/private-label26(7).jpeg",
+                "./assets/private-label26(8).jpeg",
+                "./assets/private-label26(10).jpeg",
+              ];
+            }else if (year === "2018") {
               images = [
                 "./assets/eg-beauty18.webp",
                 "./assets/eg-beauty18(2).webp",

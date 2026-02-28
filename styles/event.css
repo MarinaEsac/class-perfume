@@ -115,3 +115,14 @@
     height: 300px;
   }
 }
+
+.text-logo {
+  display: none;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+}
+
+.event-brand-logo {
+  max-width: 180px;
+}

@@ -664,19 +664,48 @@
           <div class="container-large">
             <div class="line"></div>
 
-            <header class="event-header">
-              <div class="event-logo-wrapper">
-                <img
-                  src="./assets/egybeauty-logo (2).jpeg"
-                  alt="EgyBeauty Logo"
-                  class="event-brand-logo"
-                />
-              </div>
+         <header class="event-header">
+  <div class="event-logo-wrapper">
+    <img
+      id="eventLogo"
+      alt="Event Logo"
+      class="event-brand-logo"
+      style="display:none;"
+    />
 
-              <div id="dynamic-year" class="event-year-display">2025</div>
+    <h2 id="eventTextLogo" class="text-logo" style="display:none;"></h2>
+  </div>
 
-              <p class="event-subtitle">Memories from our latest exhibition</p>
-            </header>
+  <div id="dynamic-year" class="event-year-display"></div>
+
+  <p class="event-subtitle">Memories from our latest exhibition</p>
+</header>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const storedData = JSON.parse(localStorage.getItem("selectedEvent"));
+
+  const eventLogo = document.getElementById("eventLogo");
+  const eventTextLogo = document.getElementById("eventTextLogo");
+  const eventYear = document.getElementById("dynamic-year");
+
+  if (!storedData) return;
+
+  const year = storedData.year;
+  eventYear.textContent = year;
+
+  if (year === "2026") {
+    eventTextLogo.style.display = "none";  
+    eventLogo.style.display = "block";    
+    eventLogo.src = "./assets/ple-logo.png";
+  } else {
+    eventTextLogo.style.display = "none";
+    eventLogo.style.display = "block";
+    eventLogo.src = "./assets/egybeauty-logo (2).jpeg";
+  }
+
+});
+</script>
 
             <div id="gallery-container" class="event-gallery-grid"></div>
           </div>
