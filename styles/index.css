@@ -9338,3 +9338,47 @@ footer {
     display: block;
     margin-top: 15px; 
 }
+
+@media (max-width: 480px) {
+    .shelf-container {
+        padding: 0 10px; 
+    }
+
+    .certificates-row {
+        gap: 5px; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cert-frame {
+        width: 110px; 
+        padding: 5px;
+        margin: 0 !important; 
+    }
+
+    .cert-frame:nth-child(1) {
+        transform: rotate(-3deg) translateY(10px); 
+        z-index: 1;
+    }
+
+    .cert-frame:nth-child(2) {
+        transform: scale(1.1); 
+        z-index: 2;
+    }
+
+    .cert-frame:nth-child(3) {
+        transform: rotate(3deg) translateY(10px);
+        z-index: 1;
+    }
+
+    .cert-img {
+        height: 160px; 
+        object-fit: fill;
+    }
+
+    .cert-frame::before {
+        width: 8px;
+        height: 8px;
+        top: 4px;
+    }
+}
