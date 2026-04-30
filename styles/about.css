@@ -8743,3 +8743,22 @@ footer {
   }
 }
 
+.logo-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.logo-track {
+  display: flex;
+  /* gap: 40px; */
+  width: max-content;
+  will-change: transform;
+}
+
+.partner-logo {
+  height: 60px;
+  object-fit: contain;
+}
+.partner-logo {
+  margin-right: 10px;
+}

@@ -983,8 +983,8 @@
 
               <div style="margin-bottom: 20px"></div>
 
-              <div class="partner-row-wrapper">
-                <div class="partner-track-v2">
+              <div class="logo-slider">
+                <div class="logo-track">
                   <div class="partner-group">
                     <img
                       src="./assets/fogg-logo.webp"
@@ -1022,50 +1022,15 @@
                       loading="lazy"
                     />
                   </div>
-                  <div class="partner-group">
-                    <img
-                      src="./assets/fogg-logo.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/Dabur_Logo.svg.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/FRIDAL-logo.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/myway-logo.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/class-perfumes-logo.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/beesline-logo.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/msa-perfumes-logo.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                  </div>
+                 
                 </div>
               </div>
 
-              <div style="margin-bottom: 30px"></div>
+              <!-- <div style="margin-bottom: 30px"></div> -->
             </div>
           </div>
         </section>
+
         <header class="section-about-header">
           <div class="padding-global">
             <div class="container-large">
@@ -1754,8 +1719,8 @@
               <div class="text-size-regular text-align-center">Our Brands</div>
               <!-- <div class="spacer-large"></div> -->
 
-              <div class="partner-row-wrapper">
-                <div class="partner-track">
+              <div class="logo-slider">
+                <div class="logo-track">
                   <div class="partner-group">
                     <img
                       src="./assets/diva.webp"
@@ -1793,123 +1758,44 @@
                       loading="lazy"
                     />
                   </div>
-                  <div class="partner-group">
-                    <img
-                      src="./assets/diva.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/lomani-paris.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/franck-oliver.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/cigar.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/class-perfume-brand.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/manly-man.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/xl.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="partner-group">
-                    <img
-                      src="./assets/diva.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/lomani-paris.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/franck-oliver.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/cigar.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/class-perfume-brand.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/manly-man.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/xl.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="partner-group">
-                    <img
-                      src="./assets/diva.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/lomani-paris.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/franck-oliver.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/cigar.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/class-perfume-brand.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/manly-man.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                    <img
-                      src="./assets/xl.webp"
-                      class="partner-logo"
-                      loading="lazy"
-                    />
-                  </div>
+                  
                 </div>
               </div>
               <!-- <div class="spacer-large"></div> -->
             </div>
           </div>
         </section>
+        <script>
+  window.addEventListener("load", () => {
+
+  const tracks = document.querySelectorAll(".logo-track");
+
+  tracks.forEach(track => {
+
+    track.innerHTML += track.innerHTML;
+
+    let position = 0;
+    const speed = 0.8;
+
+    function animate() {
+      position -= speed;
+
+      const halfWidth = track.scrollWidth / 2;
+
+      if (position <= -halfWidth) {
+        position = 0;
+      }
+
+      track.style.transform = `translateX(${position}px)`;
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  });
+
+});
+        </script>
         <section class="section-about-values">
           <div class="padding-global">
             <div class="container-large">
